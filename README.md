@@ -11,8 +11,8 @@ within my IDE. I want this to be done for Spring Boot project.
 ### Solution
 I found solution [here](https://moelholm.com/2016/10/22/spring-boot-separating-tests/).
 To solve this challenge two interfaces where created: `UnitTest` and `IntegrationTest`. Having this
-interfaces we can mark our test class accordingly using JUnit annotation `@Category`. If I want to have unit test
-then I annotate my test class `@Category(UnitTest.class)`. And the same goes with integration test class `@Category(IntegrationTest.class)`.
+interfaces I marked test classes accordingly using JUnit annotation `@Category`. For unit tests
+I annotated my classes `@Category(UnitTest.class)` and I did the similarly with integration test classes: `@Category(IntegrationTest.class)`.
 
 After I annotated my test classes, I created two tasks in my _gradle.build_ file as follows:
 
